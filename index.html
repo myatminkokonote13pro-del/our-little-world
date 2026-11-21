@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little World ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="logo">♡ Our Little World</h2>
+        <p class="side-text">A little place for us</p>
+
+        <nav>
+            <a href="#home">⌂ Home</a>
+            <a href="#calendar">▦ Calendar</a>
+            <a href="#period">♡ Period Care</a>
+            <a href="#memories">▧ Memories</a>
+            <a href="#letters">✉ Love Letters</a>
+            <a href="#music">♫ Our Music</a>
+        </nav>
+
+        <div class="sidebar-note">
+            "You are my favorite place."
+            <small>— Always, us ♡</small>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+<div class="photo-card">
+    <img
+        src="img/favourite .jpg"
+        alt="Our Favorite Photo"
+        class="favorite-photo"
+    >
+    <p class="photo-caption">Our favorite memory ♡</p>
+</div>
+
+            <div class="hero-text">
+                <small>DEAR MY FAVORITE PERSON,</small>
+
+                <h1>
+                    Every day is<br>
+                    <em>better with you.</em>
+                </h1>
+
+                <p>
+                    This little world holds our days,
+                    our memories, and all the words
+                    we want to keep.
+                </p>
+
+                <a href="#letters" class="read-link">
+                    Read our love letters →
+                </a>
+            </div>
+
+            <div class="sticky-note">
+                <span>♡</span>
+                <small>NEXT LITTLE MILESTONE</small>
+                <h3>July 21</h3>
+                <p>Our special day</p>
+            </div>
+
+        </section>
+
+        <!-- ANNIVERSARY -->
+<section class="anniversary anniversary-card">
+
+    <div class="anniversary-copy">
+        <small>OUR JOURNEY BEGAN · JULY 21, 2026</small>
+        <h2>Four beautiful months with you ♡</h2>
+        <p>
+            From our first day to today,
+            every moment with you means everything.
+        </p>
+        <span class="anniversary-tag">Still choosing you, every day ♡</span>
+    </div>
+
+    <div class="anniversary-stats">
+
+        <div class="anniversary-main-count">
+            <h1 id="anniversaryMonths">4</h1>
+            <span>Months Together</span>
+        </div>
+
+        <div class="anniversary-divider"></div>
+
+        <div class="anniversary-small-count">
+            <h2 id="anniversaryDays">0</h2>
+            <span>Extra Days</span>
+        </div>
+
+        <div class="anniversary-total">
+            <span id="togetherDays">123</span>
+            <small>days of us ♡</small>
+        </div>
+
+    </div>
+
+</section>
+        <!-- QUICK LINKS -->
+        <section class="little-corners">
+            <div class="section-heading">
+                <small>A LITTLE BIT OF EVERYTHING</small>
+                <h2>Our Little Corners</h2>
+            </div>
+
+            <div class="quick-grid">
+
+                <a href="#calendar" class="quick-card blush">
+                    <span>▦</span>
+                    <h3>Our Calendar</h3>
+                    <p>Keep our special days</p>
+                </a>
+
+                <a href="#period" class="quick-card cream">
+                    <span>♡</span>
+                    <h3>Period Care</h3>
+                    <p>A gentle reminder to care</p>
+                </a>
+
+                <a href="#memories" class="quick-card lilac">
+                    <span>▧</span>
+                    <h3>Our Memories</h3>
+                    <p>Photos we want to keep</p>
+                </a>
+
+                <a href="#letters" class="quick-card peach">
+                    <span>✉</span>
+                    <h3>Love Letters</h3>
+                    <p>Words from the heart</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CALENDAR -->
+        <section id="calendar" class="content-section">
+            <h2>Our Calendar ♡</h2>
+            <p>Little dates that make our story special.</p>
+
+            <div class="calendar-box">
+                <div class="calendar-header">
+                    <button id="prevMonth">‹</button>
+                    <h3 id="monthTitle">November 2026</h3>
+                    <button id="nextMonth">›</button>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+            </div>
+
+            <div class="day-note">
+                <h3 id="selectedDate">Choose a date</h3>
+                <input id="eventTitle" type="text"
+                    placeholder="Special day title">
+
+                <textarea id="eventNote"
+                    placeholder="Write a little note..."></textarea>
+
+                <button id="saveEvent">Save this day ♡</button>
+
+                <div id="eventList"></div>
+            </div>
+        </section>
+
+        <!-- PERIOD TRACKER -->
+        <section id="period" class="content-section">
+            <h2>Period Care ♡</h2>
+            <p>A little extra care for someone special.</p>
+
+            <div class="period-box">
+                <small>NEXT EXPECTED PERIOD</small>
+
+                <h1 id="expectedDate">November 27, 2026</h1>
+                <p id="periodCountdown">Your estimated date</p>
+
+                <div class="period-details">
+                    <p>
+                        Last Start:
+                        <strong id="lastStartDate">
+                            October 30, 2026
+                        </strong>
+                    </p>
+
+                    <p>
+                        Cycle:
+                        <strong id="cycleLengthLabel">28 days</strong>
+                    </p>
+                </div>
+
+                <label>Actual Period Start Date</label>
+                <input type="date" id="actualStartDate">
+
+                <label>Usual Cycle Length (Days)</label>
+                <input type="number" id="cycleLength"
+                    min="15" max="60" value="28">
+
+                <button id="savePeriod">
+                    Save & Recalculate ♡
+                </button>
+            </div>
+
+            <div class="care-message">
+                <small>TODAY'S LITTLE REMINDER</small>
+                <h3 id="dailyCareMessage">
+                    Be gentle with yourself today. ♡
+                </h3>
+            </div>
+        </section>
+
+        <!-- MEMORIES -->
+        <section id="memories" class="content-section">
+            <h2>Our Memories ♡</h2>
+            <p>The moments we want to keep.</p>
+
+            <div class="upload-box">
+                <input type="file" id="photoInput" accept="image/*">
+                <input type="text" id="photoCaption"
+                    placeholder="Write a photo caption">
+
+                <button id="addPhoto">
+                    Add Memory ♡
+                </button>
+            </div>
+
+            <div class="memory-grid" id="memoryGrid"></div>
+        </section>
+
+        <!-- LOVE LETTERS -->
+        <section id="letters" class="content-section">
+            <h2>Love Letters ♡</h2>
+            <p>Words from the heart.</p>
+
+            <div class="letter-box">
+                <input type="text" id="letterTitle"
+                    placeholder="Letter title">
+
+                <textarea id="letterBody"
+                    placeholder="Write your love letter here..."></textarea>
+
+                <button id="saveLetter">
+                    Save Love Letter ♡
+                </button>
+            </div>
+
+            <div id="letterList"></div>
+        </section>
+
+        <!-- MUSIC PLAYER -->
+<section id="music" class="content-section">
+    <h2>Our Little Soundtrack ♡</h2>
+    <p>Five songs for our favorite moments.</p>
+
+    <div class="music-box">
+
+        <div class="music-disc">♫</div>
+
+        <h3 id="songTitle">Perfect</h3>
+        <p>Our Love Playlist ♡</p>
+
+        <div id="youtubePlayer"></div>
+
+        <div class="music-buttons">
+            <button id="previousSong">|‹</button>
+            <button id="toggleMusic">▶</button>
+            <button id="nextSong">›|</button>
+        </div>
+
+        <p class="music-love-note">
+            Every song reminds me of you ♡
+        </p>
+
+    </div>
+
+    <div id="songList" class="song-list"></div>
+</section>
+
+        <footer>
+            Made with love, for our little world ♡
+        </footer>
+        </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
